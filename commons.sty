@@ -1,0 +1,80 @@
+%% commons.sty
+%% Copyright 2024 S. E. Catsamas
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008/05/04 or later.
+%
+% This work has the LPPL maintenance status “maintained”.
+% 
+% The Current Maintainer of this work is S. E. Catsamas.
+%
+% This work consists of the files commons.tex
+
+\NeedsTeXFormat{LaTeX2e} % Ensure LaTeX2e format
+\ProvidesPackage{commons}[2024/08/27 A package full of macros I commonly use]
+
+% \RequirePackage{keyval} % To manage key-value options
+% \DeclareOption{optionname}{\def\myoption{value}} % Define options
+% \ProcessOptions\relax % Process the options
+
+\RequirePackage{amsmath}
+
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{xspace}
+\RequirePackage{xspace}
+
+
+%%%%%%% editing macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\todocolour}{red!80!black}
+
+
+\newcommand{\todo}[1]{\textbf{\textcolor{\todocolour}{#1}}}
+
+\newcommand{\addcite}{\todo{[cite]}\xspace}
+
+%%%%%%% text macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\textqt}[1]{`#1'}
+\newcommand{\textqqt}[1]{``#1''}
+
+%%%%%%% maths macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\diff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\diffs}[2]{\frac{\mathrm{D}#1}{\mathrm{D}#2}}
+\newcommand{\diffp}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\sincos}[1]{\sin\left( #1 \right)\cos\left( #1 \right)}
+\newcommand{\intinf}{\int_{-\infty}^{\infty}}
+\newcommand{\suminf}[1]{\sum^\infty_{#1}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\Tr}{\mathrm{Tr}}
+
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\braket}[2]{\left\langle #1 \middle| #2 \right\rangle}
+\newcommand{\bounds}[3]{\left[ #1 \right]_{#2}^{#3}}
+
+\newcommand{\xhat}{\mathbf{\hat{x}}}
+\newcommand{\yhat}{\mathbf{\hat{y}}}
+\newcommand{\zhat}{\mathbf{\hat{z}}}
+
+\newcommand{\ihat}{\mathbf{\hat{i}}}
+\newcommand{\jhat}{\mathbf{\hat{j}}}
+\newcommand{\khat}{\mathbf{\hat{k}}}
+\newcommand{\vht}[1]{\boldsymbol{\mathbf{\hat{#1}}}}
+
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\var}{Var}
+\DeclareMathOperator{\cov}{Cov}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\endinput
