@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1724739172 "d:/git/writing/latex-commons/doc/commons-manual.tex" "commons-manual.pdf" "commons-manual" 1724739175 0
-  "../commons.sty" 1724738529 2157 d71cb5fa7da4f28f2de27d392654e842 ""
+["pdflatex"] 1724739856 "d:/git/writing/latex-commons/doc/commons-manual.tex" "commons-manual.pdf" "commons-manual" 1724739857 0
+  "../commons.sty" 1724739545 2762 8b33ab1dcc80c5049649d7e652c71b0c ""
   "C:/Users/sca/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723614855 330626 253ee03b015d6f001713142de348038a ""
   "C:/Users/sca/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1691381840 24117926 8ea14198fc820e2654a561a7061078a2 ""
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233948248 1004 54797486969f23fa377b128694d548df ""
@@ -24,6 +24,7 @@
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247596667 32001 6aeea3afe875097b1eb0da29acd61e28 ""
+  "C:/Users/sca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
@@ -75,11 +76,11 @@
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1686255640 4545 9f5ea23ab1c91476c42749893f790666 ""
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388486852 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/sca/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "commons-manual.aux" 1724739174 785 c225163fa731aa46912ab8d28a9c85c7 "pdflatex"
-  "commons-manual.out" 1724739174 168 2e7c5bf4cc9e1c6045d0ca145905825a "pdflatex"
-  "commons-manual.tex" 1724739167 409 27c0e7addccbb2bed2d769ba131564e9 ""
-  "commons-manual.toc" 1724739174 149 5d03b68d77c9d16c9914889994ce4d84 "pdflatex"
-  "d:/git/writing/latex-commons/doc/commons-manual.tex" 1724739167 409 27c0e7addccbb2bed2d769ba131564e9 ""
+  "commons-manual.aux" 1724739857 1306 ece572cc5eb21b44a4cea84b665ac85d "pdflatex"
+  "commons-manual.out" 1724739857 593 febb5a68247b9575f7f366268675a710 "pdflatex"
+  "commons-manual.tex" 1724739854 826 abe7e61d88c0b33217f697e0d1932e78 ""
+  "commons-manual.toc" 1724739857 506 e5944af821f4965e52a88092ce6d6dbf "pdflatex"
+  "d:/git/writing/latex-commons/doc/commons-manual.tex" 1724739854 826 abe7e61d88c0b33217f697e0d1932e78 ""
   (generated)
   "commons-manual.aux"
   "commons-manual.log"
