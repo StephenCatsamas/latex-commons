@@ -13,14 +13,14 @@
 % 
 % The Current Maintainer of this work is S. E. Catsamas.
 %
-% This work consists of the files commons.tex
+% This work consists of the files commons.sty
 
 \NeedsTeXFormat{LaTeX2e} % Ensure LaTeX2e format
 \ProvidesPackage{commons}[2024/08/27 A package full of macros I commonly use]
 
-% \RequirePackage{keyval} % To manage key-value options
-% \DeclareOption{optionname}{\def\myoption{value}} % Define options
-% \ProcessOptions\relax % Process the options
+\RequirePackage{kvoptions}
+\DeclareBoolOption{draft}
+\ProcessKeyvalOptions* % Process the options
 
 \RequirePackage{amsmath}
 
@@ -32,8 +32,22 @@
 %%%%%%% editing macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\todocolour}{red!80!black}
 
+\ifcommons@draft
+	\RequirePackage{tocloft}
+	\newlistof{todo}{todos}{Todo List}
 
-\newcommand{\todo}[1]{\textbf{\textcolor{\todocolour}{#1}}}
+	\newcommand{\todobare}[1]{%
+		\refstepcounter{todo}%
+		\addcontentsline{todos}{todo}{\protect\numberline{\thetodo}#1}%
+		\noindent #1%
+	}
+    \newcommand{\printlistoftodo}{\listoftodo}
+\else
+	\newcommand{\todobare}[1]{}
+    \newcommand{\printlistoftodo}{}
+\fi
+
+\newcommand{\todo}[1]{\textbf{\textcolor{\todocolour}{\todobare{#1}}}}
 
 \newcommand{\addcite}{\todo{[cite]}\xspace}
 
