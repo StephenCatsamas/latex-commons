@@ -15,18 +15,29 @@
 \maketitle
 \tableofcontents
 
+
 \section{Options}
 \subsection{\texttt{draft}}\label{sec:opt:draft}
     Enables the editing commands (\cref{sec:com:edit}).
 
+\subsection{\texttt{tikz}}\label{sec:opt:tikz}
+    Enables the tikz commands.
+
 \section{Commands}
 \subsection{Editing}\label{sec:com:edit}
 When the \texttt{draft} mode is enabled (\cref{sec:opt:draft}), these commands also add an entry to  \texttt{\textbackslash listoftodo}.
-\subsubsection{\texttt{\textbackslash todo}}
-    \todo{This command makes a todo item by bolding and highlighting the text.}
+\subsubsection{\texttt{\textbackslash todo[1]}}
+    \todo{This command makes a todo item by bolding and highlighting \#1.}
+
+\subsubsection{\texttt{\textbackslash todofig[1]}}
+    Adds in a placeholder figure of radius \#1.
 
 \subsubsection{\texttt{\textbackslash addcite}}
-    This command adds a todo reminder to add a citation \addcite{}
+    This command adds a todo reminder to add a citation \addcite
+
+\subsubsection{\texttt{\textbackslash fix}}
+    This command adds a todo reminder to fix something. \fix
+
 
 \subsubsection{\texttt{\textbackslash printlistoftodo}}
     This command will print the list of todo if the \texttt{draft} option (\cref{sec:opt:draft}) is enabled, otherwise nothing will be printed.
@@ -34,15 +45,17 @@ When the \texttt{draft} mode is enabled (\cref{sec:opt:draft}), these commands a
 \subsection{Text}
 
 \subsubsection{\texttt{\textbackslash textqt[1]}}
-    This command \textqt{single quotes text}
+    This command \textqt{single quotes \#1}
 
 \subsubsection{\texttt{\textbackslash textqqt[1]}}
-    This command \textqqt{double quotes text}
+    This command \textqqt{double quotes \#1}
 
 \subsection{Math}
 
 \subsubsection{\texttt{\textbackslash diff[2]}}
-    This command adds a differential operator: $\diffp{y}{x}$
+    This command adds a differential operator: $\diffp{\#1}{\#2}$
+
+\subsubsection{\texttt{the other commands...}}
 
 \section{Examples}
 \subsection{Todo List}
